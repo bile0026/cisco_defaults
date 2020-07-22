@@ -8,7 +8,7 @@
   - name: Set NTP Server
     ios_ntp:
       server: "{{ item }}"
-      source_int: ntp_source_interface
+      source_int: "{{ ntp_source_interface }}"
       state: present
     with_items: "{{ ntp_server }}"
     notify: save ios
