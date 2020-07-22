@@ -1,8 +1,8 @@
 ---
 # tasks file for cisco_defaults
-  - name: Include tasks to run
-    import_tasks:
-      - set_ntp.yml
-      - set_services.yml
-      - set_banner.yml
-      - set_logging.yml
+- name: Include tasks to run
+  include_tasks:
+    - set_ntp.yml
+    - set_services.yml
+    - set_banner.yml
+    - set_logging.yml
