@@ -24,6 +24,6 @@
 
   tasks:
     - include_role:
-        - cisco_defaults
+        name: cisco_defaults
       vars:
         ansible_network_os: ios
