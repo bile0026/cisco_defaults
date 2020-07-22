@@ -4,7 +4,7 @@
   - name: Set logging configuration
     ios_logging:
       dest: host
-      name: item
+      name: "{{ item }}"
       level: warnings
     with_items: logging_servers
     notify: save ios
