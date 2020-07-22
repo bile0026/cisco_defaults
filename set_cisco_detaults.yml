@@ -21,8 +21,9 @@
   hosts: reachable
   gather_facts: False
   connection: network_cli
-  ansible_network_os: ios
 
   tasks:
     - include_role:
         - cisco_defaults
+      vars:
+        ansible_network_os: ios
