@@ -17,9 +17,9 @@ Sets these settings, modify for your environment:
 Update these vars for your configuration:
 ```
 ntp_server:
-  - 172.16.1.31
+  - 172.16.1.1
 ntp_source_interface: vlan4000
 company_name: Company
 logging_servers:
-  - 10.205.100.101
+  - 172.16.1.1
 ```
