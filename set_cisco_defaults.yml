@@ -23,7 +23,7 @@
   connection: network_cli
 
   tasks:
-    - include_role:
+    - import_role:
         name: cisco_defaults
       vars:
         ansible_network_os: ios
