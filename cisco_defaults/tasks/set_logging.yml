@@ -6,5 +6,6 @@
       dest: host
       name: "{{ item }}"
       level: warnings
-    with_items: logging_servers
+    with_items:
+      - logging_servers
     notify: save ios
