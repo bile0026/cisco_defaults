@@ -3,6 +3,10 @@
 
   - name: Set logging configuration
     cisco.ios.ios_logging:
+      provider:
+        host: "{{ ansible_host }}"
+        username: "{{ ansible_ssh_user }}"
+        password: "{{ ansible_ssh_password }}"
       dest: host
       name: "{{ item }}"
       level: warnings
