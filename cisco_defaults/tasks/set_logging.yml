@@ -1,0 +1,9 @@
+---
+# tasks to configure logging
+
+  - name: Set logging configuration
+    ios_logging:
+      dest: host
+      name: item
+      level: warnings
+    with_items: logging_servers

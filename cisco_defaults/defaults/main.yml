@@ -9,3 +9,7 @@ ntp_source_interface: vlan4000
 
 # company name to include in your banner message
 comany_name: Company
+
+# logging server IP's
+logging_servers:
+  - 10.205.100.101

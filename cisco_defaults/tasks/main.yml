@@ -5,3 +5,4 @@
     - set_ntp.yml
     - set_services.yml
     - set_banner.yml
+    - set_logging.yml
