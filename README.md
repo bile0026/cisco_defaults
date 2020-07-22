@@ -1,2 +1,2 @@
-# Ansible_Role_Default
-default structure for ansible
+# cisco_defaults
+Sets various default configuration items on cisco devices.
