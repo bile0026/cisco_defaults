@@ -4,7 +4,7 @@
   ios_command:
     commands:
       #- no service dhcp
-      - vtp mode off
+      #- vtp mode off
       - no ip domain-lookup
       - no ip http server
       - no ip http secure-server
