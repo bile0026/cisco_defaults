@@ -2,11 +2,12 @@
 # task that sets system services to enabled or disabled
 - name: Set system services
   cisco.ios.ios_command:
-    commands: "vtp mode off"
+    lines:
       #- no service dhcp
-      # - no ip domain-lookup
-      # - no ip http server
-      # - no ip http secure-server
-      # - ip ssh version 2
-      # - ip scp server enable
+      - vtp mode off
+      - no ip domain-lookup
+      - no ip http server
+      - no ip http secure-server
+      - ip ssh version 2
+      - ip scp server enable
   notify: save ios
