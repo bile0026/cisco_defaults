@@ -1,12 +1,12 @@
 ---
 # tasks file that sets ntp settings
   - name: Clear NTP settings
-    ios_ntp:
+    cisco.ios.ios_ntp:
       state: absent
     notify: save ios
 
   - name: Set NTP Server
-    ios_ntp:
+    cisco.ios.ios_ntp:
       server: "{{ item }}"
       source_int: "{{ ntp_source_interface }}"
       state: present

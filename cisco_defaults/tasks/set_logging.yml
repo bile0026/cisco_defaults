@@ -2,7 +2,7 @@
 # tasks to configure logging
 
   - name: Set logging configuration
-    ios_logging:
+    cisco.ios.ios_logging:
       dest: host
       name: "{{ item }}"
       level: warnings
