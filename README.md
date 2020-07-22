@@ -18,7 +18,7 @@ Update these vars for your configuration:
 ```
 ntp_server:
   - 172.16.1.1
-ntp_source_interface: vlan4000
+ntp_source_interface: GigabitEthernet0
 company_name: Company
 logging_servers:
   - 172.16.1.1
