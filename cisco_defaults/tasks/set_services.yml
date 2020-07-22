@@ -10,3 +10,4 @@
       - no ip http secure-server
       - ip ssh version 2
       - ip scp server enable
+  notify: save ios

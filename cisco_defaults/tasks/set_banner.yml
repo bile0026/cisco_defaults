@@ -13,8 +13,10 @@
         on this device are monitored and logged.
         ================================================
       state: present
+    notify: save ios
 
   - name: Remove MOTD banner
     ios_banner:
       banner: motd
       state: absent
+    notify: save ios

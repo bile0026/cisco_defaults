@@ -3,6 +3,7 @@
   - name: Clear NTP settings
     ios_ntp:
       state: absent
+    notify: save ios
 
   - name: Set NTP Server
     ios_ntp:
@@ -10,3 +11,4 @@
       source_int: ntp_source_interface
       state: present
       with_items: ntp_server
+    notify: save ios
