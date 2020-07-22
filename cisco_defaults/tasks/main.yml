@@ -1,7 +1,7 @@
 ---
 # tasks file for cisco_defaults
 
-- import_tasks: set_banner.yml
+#- import_tasks: set_banner.yml
 - import_tasks: set_logging.yml
 - import_tasks: set_ntp.yml
 - import_tasks: set_services.yml
