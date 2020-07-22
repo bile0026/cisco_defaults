@@ -1,2 +1,11 @@
 ---
 # defaults file for cisco_defaults
+
+# list of ntp server IP's
+ntp_server:
+  - 172.16.1.31
+# interface that will be used to send NTP requests
+ntp_source_interface: vlan4000
+
+# company name to include in your banner message
+comany_name: Company

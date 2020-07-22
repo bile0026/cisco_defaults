@@ -1,0 +1,20 @@
+---
+# tasks file that sets system banner message
+
+  - name: Set the system banner message
+    ios_banner:
+      banner: login
+      text: |
+        UNAUTHORIZED ACCESS TO THIS DEVICE IS PROHIBITED
+        ================================================
+        You must have explicit authorized permission by "{{ company_name }}" to access or
+        configure this device. Unauthorized attempts and actions to access or use this
+        system may result in civil and/or criminal penalties. All activities performed
+        on this device are monitored and logged.
+        ================================================
+      state: present
+
+  - name: Remove MOTD banner
+    ios_banner:
+      banner: motd
+      state: absent
