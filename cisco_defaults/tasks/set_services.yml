@@ -4,10 +4,10 @@
   ios_command:
     commands:
       #- no service dhcp
-      #- vtp mode off
-      - no ip domain-lookup
-      - no ip http server
-      - no ip http secure-server
-      - ip ssh version 2
-      - ip scp server enable
+      - "vtp mode off"
+      - "no ip domain-lookup"
+      - "no ip http server"
+      - "no ip http secure-server"
+      - "ip ssh version 2"
+      - "ip scp server enable"
   notify: save ios
